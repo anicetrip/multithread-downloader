@@ -13,16 +13,16 @@ import java.util.Scanner;
  **/
 public class Main {
     public static void main(String[] args) {
-        String url = null;
-        if (args == null || args.length == 0) {
-            do {
-                LogUtils.info("请输入下载链接");
-                Scanner scanner = new Scanner(System.in);
-                url = scanner.next();
-            } while (url == null);
-        } else {
-            url = args[0];
-        }
+        String url = "https://video.dashucun.com/dsc/09.mp4";
+//        if (args == null || args.length == 0) {
+//            do {
+//                LogUtils.info("请输入下载链接");
+//                Scanner scanner = new Scanner(System.in);
+//                url = scanner.next();
+//            } while (url == null);
+//        } else {
+//            url = args[0];
+//        }
         LogUtils.info("下载地址为{}",url);
         Downloader downloader = new Downloader();
         downloader.download(url);

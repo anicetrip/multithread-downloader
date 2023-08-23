@@ -8,5 +8,7 @@ package top.finnewworld.constant;
  **/
 public class Constant {
     public static final String  Path = ".\\download\\";
-    public static final String testUrl = "https://www.dashucun.com/usr/uploads/2023/07/242701311.epub";
+    public static final String testUrl = "https://video.dashucun.com/dsc/09.mp4";
+    public static final double MB = 1024d * 1024d;
+    public static final int BYTE_SIZE = 1024 * 100;
 }
